@@ -1,5 +1,3 @@
-![alt tag](https://github.com/ddgiovinazzo/kegger/blob/main/app/assets/images/kegger.png)
-
 #Beginner JS
 
 Beginner JS is an interactive typing game that designed to teach children around the age 8 basic javascript syntax and functonality.
