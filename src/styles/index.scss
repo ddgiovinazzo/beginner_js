@@ -1,68 +1,99 @@
 // MIXINS && VARIABLES
 
-@mixin basic-box-shadow($color) {
-  box-shadow: 3px 3px 5px 5px $color, 1px 0px 1px $color;
-}
 
-$main-color: blue;
-$accent-color: darken($main-color, 20%);
-$background-color: lighten($main-color, 40%);
+
+
 
 // LAYOUT
+*{
+  box-sizing: border-box;
+}
 
 body {
-  background-color: $background-color;
-  color: $main-color;
+  background-color: lightblue;
   display: flex;
   flex-direction: column;
 }
 
-.center {
+#root{
+  display: flex;
+  justify-content: center;
+  height: 95vh;
+}
+
+#outer-typing-cont{
+  top: 40%;
+  width: 50%;
+  height: 50%;
+  background-color: rgb(247, 222, 189);
+  border-left: 5px solid brown;
+  border-right: 5px solid brown;
+  border-bottom: 5px solid brown;
+  border-top: 15px solid darkgreen;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+}
+
+#typing-box{
+  color: rgb(66, 4, 4);
+  resize: none;
+  outline: none;
+  border: 1px solid brown;
+  border-radius: 10px;
+  background-color: transparent;
+  font-size: 60px;
+  padding: 20px 30px;
+
+}
+
+#typing-box:focus{
+  border: 1px solid rgb(78, 11, 11);
+}
+
+.button-style{
+  position: absolute;
+  bottom: 15px;
+  padding: 30px;
+  background-color: rgb(169, 224, 169);
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: rgb(109, 39, 18);
+
+  width: 20%;
+  height: 5%;
+  margin: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  box-shadow: 0 5px rgb(173, 165, 165);
+    -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  user-select: none;
 }
 
-// COMPONENTS
-.card {
-  background: white;
-  height: 50vh;
-  width: 50vw;
-  border-radius: 15px;
-  margin-top: 15px;
-  @include basic-box-shadow($accent-color);
+.button-style:hover{
+  background-color: rgb(104, 173, 104);
+  color: white;
+  cursor: pointer;
+  
 }
+.button-style:active{
+  box-shadow: 0 3px rgb(99, 98, 98);
+  transform: translateY(2px);
 
-.rando {
-  display: flex;
-  flex-direction: column;
-
-  btn {
-    height: 2em;
-    background: magenta;
-    color: white;
-    width: 10vmax;
-    text-align: center;
-    padding-top: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 20px;
-    line-height: 1.5;
-  }
-
-  p {
-    font-family: Arial, Helvetica, sans-serif;
-    color: blueviolet;
-    font-weight: 500;
-    font-size: 5vmin;
-  }
 }
+.button-enter{
+  background-color: rgb(104, 173, 104);
+  color: white;
+  box-shadow: 0 3px rgb(99, 98, 98);
+  transform: translateY(2px);
 
-.image-card {
-  background-image: url("../images/yoda-stitch.jpg");
-  background-position: center;
-}
-
-// TYPOGRAPHY
-h2 {
-  font-size: 3rem;
 }
