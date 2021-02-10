@@ -1,45 +1,39 @@
 import "./styles/index.scss";
-
+import CodeMirror from "../codemirror/lib/codemirror"
+import "../codemirror/mode/javascript/javascript"
+import "../codemirror/addon/edit/closebrackets"
 
 const button = document.getElementById('button')
 const answer = document.getElementById('typing-box')
 answer.value = ''
-
-function wait(ms) {
-  return new Promise(response => setTimeout(response, ms));
-}
-
-answer.addEventListener('keydown', (e)=>{
-  if(e.keyCode === 13){ 
-    e.preventDefault()
-    wait(250).then(()=>{
-      button.classList.remove('button-enter')
-    })
-    button.classList.add('button-enter')
-    button.click()
-    
-  }
-})
+const editor = CodeMirror.fromTextArea(answer, {
+  mode: 'javascript',
+  theme: 'paraiso-light',
+  autoCloseBrackets: true})
 
 
 const checker = ()=>{
   const question = document.getElementById('question-box')
+  const value = `${eval(editor.getValue("\n"))}`
+  const output = document.getElementById('output-box')
+  const button = document.getElementById('button')
 
-  if (answer.value === question.innerHTML){
-    question.innerHTML = "YAY!"
+  output.innerHTML = `Output: ${value}`
+
+  if (value === question.innerHTML){
+    question.classList.add("correct")
+    question.classList.remove("incorrect")
+
+    button.classList.add("button-correct")
+    button.classList.remove("button-incorrect")
+    button.innerHTML = "Correct!"
+
   }else{
-    console.log(question.innerHTML)
-    console.log(answer.value)
+    question.classList.add("incorrect")
+    button.classList.add("button-incorrect")
+    button.innerHTML = "Try Again."
 
   }
 }
 
 button.addEventListener('click', checker)
-
-
-
-
-
-
-
-
