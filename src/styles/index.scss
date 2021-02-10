@@ -27,6 +27,7 @@ body {
   width: 60%;
   height: 70%;
   background-color: rgb(247, 222, 189);
+  background-image:linear-gradient(to bottom right, rgba(250, 203, 203, 0.3), rgba(248, 247, 179, 0.3));
   border-left: 5px solid brown;
   border-right: 5px solid brown;
   border-bottom: 5px solid brown;
@@ -37,6 +38,8 @@ body {
   align-items: center;
   flex-direction: column;
   position: relative;
+  box-shadow: 3px 0 rgb(158, 151, 151);
+
 }
 
 .CodeMirror{
@@ -86,12 +89,12 @@ body {
   box-shadow: 0 4px rgb(158, 151, 151);
   transform: translateY(2px);
 }
-.button-enter{
-  background-color: rgb(104, 173, 104);
+.button-down{
   color: white;
-  box-shadow: 0 3px rgb(99, 98, 98);
+  box-shadow: 0 4px rgb(158, 151, 151);
   transform: translateY(2px);
 }
+
 
 .box{
   font-size: 3vw;
@@ -119,6 +122,13 @@ body {
   background-color: rgb(104, 173, 104);
   color: white;
 }
+.button-correct:hover{
+  background-color: rgb(89, 150, 89);
+  color: white;
+}
+.button-correct:active{
+  background-color: rgb(89, 150, 89);
+}
 
 .button-incorrect{
   background-color: rgb(255, 44, 44);
@@ -126,7 +136,7 @@ body {
 
 }
 .button-incorrect:hover{
-  background-color: rgb(255, 44, 44);
+  background-color: rgb(189, 33, 33);
 }
 .button-incorrect:active{
   background-color: rgb(189, 33, 33);
