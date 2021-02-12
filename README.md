@@ -13,7 +13,7 @@ Beginner JS is an interactive typing game that designed to teach children around
   * create multiple levels with increasing diffuculty to give a challenge to prgress forward
 
 ## Design Plan
-![alt tag](https://github.com/ddgiovinazzo/js_final_project/blob/master/src/images/wireframe.png)
+![alt tag](https://github.com/ddgiovinazzo/beginner_js/blob/main/src/images/wireframe.png)
     
 ## Technologies Used
 * Vanilla JavaScript
