@@ -14,12 +14,25 @@ body {
   background-color: lightblue;
   display: flex;
   flex-direction: column;
+  font-family: 'Pangolin', cursive;
 }
 
 #root{
   display: flex;
   justify-content: center;
   height: 95vh;
+}
+
+.level-container{
+  list-style: none;
+  position: absolute;
+  top: 25%;
+  left: 7.5%;
+  font-size: 2vw
+}
+.level-container > li{
+  padding: 3%;
+  width: 8vw
 }
 
 #outer-typing-cont{
