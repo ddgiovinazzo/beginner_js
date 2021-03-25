@@ -193,6 +193,11 @@ main{
     transform:translate(-50%,-50%) rotate(45deg);
     background-color:#2b2b2b;
 }
+
+#header-icon{
+    color: white;
+    padding-right: 10px;
+}
 ul li:before {
     margin-left: 10px;	color: #999;
 	content: "\00BB \0020";
