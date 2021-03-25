@@ -1,0 +1,36 @@
+.button{
+    font-family: 'Lato', sans-serif; letter-spacing: 1px;
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #61A151;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+  }
+  
+  .button:hover{
+    background-color: #528844;
+    color: white;
+    cursor: pointer;
+    
+  }
+  .button:active{
+    border: 1px solid white;
+  }
+
+  #reset-button{
+    background-color: #9876AA;
+  }
+  #reset-button:hover{
+    background-color: #835e97;
+  }
