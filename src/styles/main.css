@@ -5,6 +5,11 @@ strong{
 	color: #629755;
 }
 
+em{
+  font-style: italic;
+  color: #9876AA
+}
+
 body {
   display: flex;
   flex-direction:  column;
