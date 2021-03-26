@@ -14,7 +14,7 @@ export const cmEditor = CodeMirror.fromTextArea(editor, {
 })
 export const cmConsole = CodeMirror.fromTextArea(console, {
   mode: 'javascript',
-  theme: 'darcula',
+  theme: 'darcula-console',
   readOnly: true,
   autoCloseBrackets: true,
   lineNumbers: true,

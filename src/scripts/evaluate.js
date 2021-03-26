@@ -38,11 +38,16 @@ console = (function (devConsole){
 const evaluate = () => {
     messages.length = 0
     try {
+      if(cmConsole.getOption("theme") === "darcula-console-erros") 
+      cmConsole.setOption("theme", "darcula-console")
+      
       cmConsole.setValue("")
       new Function(cmEditor.getValue("\n"))()
     }
     
     catch (error) {
+      if(cmConsole.getOption("theme") === "darcula-console") 
+      cmConsole.setOption("theme", "darcula-console-errors")
       console.error(error)
     }
     
