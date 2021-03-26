@@ -7,7 +7,7 @@
 .cm-s-darcula.CodeMirror { background: #2B2B2B; color: #A9B7C6; }
 
 .cm-s-darcula span.cm-meta { color: #BBB529; }
-.cm-s-darcula span.cm-number { color: #6897BB; }
+.cm-s-darcula span.cm-number { color: #6897bb; }
 .cm-s-darcula span.cm-keyword { color: #CC7832; line-height: 1em; font-weight: bold; }
 .cm-s-darcula span.cm-def { color: #A9B7C6; font-style: italic; }
 .cm-s-darcula span.cm-variable { color: #A9B7C6; }
@@ -39,7 +39,7 @@
 .cm-s-darcula .CodeMirrir-linenumber { color: #606366; }
 .cm-s-darcula .CodeMirror-matchingbracket { background-color: #3B514D; color: #FFEF28 !important; font-weight: bold; }
 
-.cm-s-darcula div.CodeMirror-selected { background: rgba(255, 255, 255, 0.2); }
+.cm-s-darcula div.CodeMirror-selected { background:  rgba(104, 151, 187,.4);  }
 
 .CodeMirror-hints.darcula {
   font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
