@@ -1,13 +1,15 @@
 import "./styles/index.scss"
-import {cmEditor} from "./scripts/codeMirror"
 import evaluate from "./scripts/evaluate"
 import reset from "./scripts/reset"
 
-reset(cmEditor)
+reset()
 
 const runButton = document.getElementById('run-button')
 const resetButton = document.getElementById('reset-button')
 
-cmEditor.setOption("extraKeys", {"Ctrl-Enter": evaluate});
+document.addEventListener('keydown', (event)=>{
+    if(event.key ==="Enter" && event.ctrlKey) return evaluate()
+    if(event.key ==="Delete" && event.ctrlKey) return reset()
+})
 runButton.addEventListener('click', evaluate)
 resetButton.addEventListener('click', () => reset())

@@ -1,5 +1,10 @@
 ::selection { background:  rgba(255, 255, 255, 0.2); }
 
+strong{
+	font-weight: bold;
+	color: #629755;
+}
+
 body {
   display: flex;
   flex-direction:  column;
@@ -15,28 +20,10 @@ main{
   background-image: linear-gradient(335deg, rgba(195, 72, 70, .1), rgba(104, 151, 187,.1), rgba(152, 118, 170,.1), rgba(106, 135, 89,.1));
   justify-content: space-evenly;
   align-items: center;
-  flex-direction: column;
+  padding: 30px;
+  color: #2B2B2B
 }
 
-.level-container{
-  /* background-color: #C2FFE2; */
-  list-style: none;
-  font-size: 2vw;
-  width: 400px;
-}
-.level-container > li{
-  padding: 3%;
-  width: 8vw
-}
-
-#button-container{
-  width: 70%;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  background-color: #292929;
-
-}
 
 .box{
   font-size: 22px;
@@ -56,7 +43,7 @@ main{
 }
 
 #response-box{
-  width: 90%;
+  width: 60%;
   height: 500px;
   display: flex;
   align-items: center;

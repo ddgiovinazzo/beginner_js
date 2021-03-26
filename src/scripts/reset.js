@@ -2,7 +2,7 @@ import {cmEditor, cmConsole} from "./codeMirror"
 
 
 const reset = () =>{
-    const defaultValue = 'console.log("Hello World!")'
+    const defaultValue = 'console.log("Hey Developers!")'
     cmEditor.setValue(defaultValue)
 
     cmConsole.setValue("")
