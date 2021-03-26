@@ -1,0 +1,16 @@
+.CodeMirror{
+    resize: none;
+    outline: none;
+    font-size: 22px;
+    width: 70%;
+    height: 300px;
+  }
+
+.CodeMirror.cm-s-darcula-console,
+.CodeMirror.cm-s-darcula-console-errors{
+    border-radius: 0 0 10px 10px;
+}
+
+.CodeMirror.cm-s-darcula{
+    border-radius: 10px 10px 0 0;
+}

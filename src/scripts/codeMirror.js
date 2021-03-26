@@ -10,6 +10,7 @@ export const cmEditor = CodeMirror.fromTextArea(editor, {
   theme: 'darcula',
   autoCloseBrackets: true,
   lineNumbers: true,
+  autofocus: true,
   gutter: true,
 })
 export const cmConsole = CodeMirror.fromTextArea(console, {

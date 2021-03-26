@@ -39,7 +39,7 @@
 .cm-s-darcula .CodeMirrir-linenumber { color: #606366; }
 .cm-s-darcula .CodeMirror-matchingbracket { background-color: #3B514D; color: #FFEF28 !important; font-weight: bold; }
 
-.cm-s-darcula div.CodeMirror-selected { background: #214283; }
+.cm-s-darcula div.CodeMirror-selected { background: rgba(255, 255, 255, 0.2); }
 
 .CodeMirror-hints.darcula {
   font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
