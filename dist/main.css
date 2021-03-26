@@ -46,7 +46,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+::selection { background:  rgba(255, 255, 255, 0.2); }
 
 body {
   display: flex;
@@ -75,14 +75,6 @@ main{
 .level-container > li{
   padding: 3%;
   width: 8vw
-}
-
-.CodeMirror{
-  resize: none;
-  outline: none;
-  font-size: 22px;
-  width: 70%;
-  height: 300px;
 }
 
 #button-container{
@@ -117,6 +109,22 @@ main{
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+.CodeMirror{
+    resize: none;
+    outline: none;
+    font-size: 22px;
+    width: 70%;
+    height: 300px;
+  }
+
+.CodeMirror.cm-s-darcula-console,
+.CodeMirror.cm-s-darcula-console-errors{
+    border-radius: 0 0 10px 10px;
+}
+
+.CodeMirror.cm-s-darcula{
+    border-radius: 10px 10px 0 0;
 }
 ul li:before {
     margin-left: 10px;	color: #999;
@@ -175,6 +183,12 @@ ul li {
     justify-content: center;
     align-items: center;
     min-height: 60px;
+    -webkit-touch-callout: none;
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .footer-container p {
     font-family: 'Lato', sans-serif; letter-spacing: 1px;
