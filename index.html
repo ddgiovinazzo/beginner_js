@@ -26,8 +26,8 @@
   </header>
 
   <main>
-    <div id = "app-text-container">
-      <div id="instructions">
+    <div id = "level-container">
+      <div id="level-0">
         <h1>Hey There!</h1>
         <br/>
         <p>
@@ -45,13 +45,39 @@
             needed in order to display any output. Push the <strong>"run code"</strong> button
             to see it working!
         </p>
-      </div>
+        </div>
+
+        <div div class="level-hidden" id="level-1">
+          <h1>Lesson One: Strings</h1>
+          <br/>
+          <p>
+            A string is used for storing and changing text. 
+            They can consist of zero or more characters and are written inside of quotation marks.
+          </p>
+          <br/>
+          <p>
+            <strong>Note:</strong> You can use both single ' ' or double " " quotes.
+          </p>
+        <br/>
+        <p>
+            Print the string "Hello World!" in the console.
+        </p>
+        <br/>
+        </div>
+        <div div class="level-hidden" id="level-2">
+          <h1>Lesson Two</h1>
+        </div>
+        <br/>
+        <div id="level-button-container">
+          <span class="button level-button" id="previous-level-button">&#129136; Previous</span>
+          <span class="button level-button" id="next-level-button">Next &#129138;</span>
+        </div>
     </div>
     <div id="response-box">
       <textarea id="cm-editor" autofocus></textarea>
       <div id="button-container">
-        <span id="run-button" class="button">Run Code</span>
-        <span id="reset-button" class="button">Reset</span>
+        <span id="run-button" class="button code-button">Run Code</span>
+        <span id="reset-button" class="button code-button">Reset</span>
       </div>
       <textarea id="cm-console"></textarea>
     </div>

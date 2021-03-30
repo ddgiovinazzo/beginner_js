@@ -1,6 +1,6 @@
-import addOutput from "./addOutput"
 import {cmEditor, cmConsole} from "./codeMirror"
 import formatByType from "./formatByType"
+import addOutput from "./addOutput"
 
 const messages = []
 
