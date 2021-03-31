@@ -21,8 +21,10 @@ resetButton.addEventListener('click', () => resetLevel(currentLevelNumber))
 nextLevelButton.addEventListener('click', () => {
     currentLevelNumber++
     currentLevel(currentLevelNumber, nextLevelButton, previousLevelButton)
+    resetLevel(currentLevelNumber)
 })
 previousLevelButton.addEventListener('click', () => {
     currentLevelNumber--
     currentLevel(currentLevelNumber, nextLevelButton, previousLevelButton)
+    resetLevel(currentLevelNumber)
 })
