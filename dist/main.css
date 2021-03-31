@@ -91,10 +91,12 @@ main{
   border-radius: 0 0 20px 20px
 }
 .correct{
-  color: #0AFF89;
+  color: #629755;
+  font-weight: bold;
 }
 .incorrect{
-  color: #C34846;
+  color: #BC3F3C;
+  font-weight: bold;
 }
 
 #response-box{
@@ -179,11 +181,12 @@ ul li {
 
   #level-button-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 .level-button{
     background-color: #568BB3;
-    margin: 0 10px 0 10px;
+    padding: 10px 15px;
+    width: 100px
 }
 .level-button:hover{
     background-color: #46769B;

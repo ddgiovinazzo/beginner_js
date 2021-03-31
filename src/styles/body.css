@@ -41,10 +41,12 @@ main{
   border-radius: 0 0 20px 20px
 }
 .correct{
-  color: #0AFF89;
+  color: #629755;
+  font-weight: bold;
 }
 .incorrect{
-  color: #C34846;
+  color: #BC3F3C;
+  font-weight: bold;
 }
 
 #response-box{

@@ -2,6 +2,7 @@ import "./styles/index.scss"
 import evaluate from "./scripts/evaluate"
 import resetLevel from "./scripts/levels/resetLevel"
 import currentLevel from "./scripts/levels/current_level"
+import checkAnswer from "./scripts/checkAnswer"
 
 let currentLevelNumber = 0
 resetLevel(currentLevelNumber)
@@ -16,7 +17,10 @@ document.addEventListener('keydown', (event)=>{
     if(event.key ==="Enter" && event.ctrlKey) return evaluate()
     if(event.key ==="Delete" && event.ctrlKey) return reset()
 })
-runButton.addEventListener('click', evaluate)
+runButton.addEventListener('click', ()=>{
+    evaluate()
+    checkAnswer(currentLevelNumber)
+})
 resetButton.addEventListener('click', () => resetLevel(currentLevelNumber))
 nextLevelButton.addEventListener('click', () => {
     currentLevelNumber++

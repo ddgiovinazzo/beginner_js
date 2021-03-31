@@ -49,11 +49,12 @@
 
   #level-button-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 .level-button{
     background-color: #568BB3;
-    margin: 0 10px 0 10px;
+    padding: 10px 15px;
+    width: 100px
 }
 .level-button:hover{
     background-color: #46769B;
