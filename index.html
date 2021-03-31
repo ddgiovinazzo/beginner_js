@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="shortcut icon" href="./dist/images/favicon.ico" type="image/x-icon">  
+  <link rel="shortcut icon" href="./dist/images/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Lato&family=Roboto&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./codemirror-5.59.2/lib/codemirror.css">
@@ -26,53 +26,55 @@
   </header>
 
   <main>
-    <div id = "level-container">
+    <div id="level-container">
       <div id="level-0">
         <h1>Hey There!</h1>
-        <br/>
+        <br />
         <p>
-            beginner.js showcases the basics of javascript.
-            The goal is to keep it simple and allow you to start discovering your coding potential.
+          beginner.js showcases the basics of javascript.
+          The goal is to keep it simple and allow you to start discovering your coding potential.
         </p>
-        <br/>
+        <br />
         <p>
-            Write your code in the top box, aka the text editor. 
-            Running the code will output the results below in the console.
+          Write your code in the top box, aka the text editor.
+          Running the code will output the results below in the console.
         </p>
-        <br/>
+        <br />
         <p>
-            <strong>Remember: </strong>The javascript method <em>console.log() </em>is
-            needed in order to display any output. Push the <strong>"run code"</strong> button
-            to see it working!
+          <strong>Remember: </strong>The javascript method <em>console.log() </em>is
+          needed in order to display any output. Push the <strong>"run code"</strong> button
+          to see it working!
         </p>
-        </div>
+      </div>
 
-        <div div class="level-hidden" id="level-1">
-          <h1>Lesson One: Strings</h1>
-          <br/>
-          <p>
-            Strings are used for storing and changing text. 
-            They consist of zero or more characters and are written inside of quotation marks.
-          </p>
-          <br/>
-          <p>
-            <strong>Note:</strong> You can use single ' ' or double " " quotes.
-          </p>
-        <br/>
+      <div div class="level-hidden" id="level-1">
+        <h1>Lesson One: Strings</h1>
+        <br />
         <p>
-            Print the string <em>"Hello World!" </em>in the console.
+          Strings are used for storing and changing text.
+          They consist of zero or more characters and are written inside of quotation marks.
         </p>
-        <br/>
-        </div>
-        <div div class="level-hidden" id="level-2">
-          <h1>Lesson Two</h1>
-        </div>
-        <br/>
+        <br />
+        <p>
+          <strong>Note:</strong> You can use single ' ' or double " " quotes.
+        </p>
+        <br />
+        <p>
+          Print the string <em>"Hello World!" </em>in the console.
+        </p>
+        <br />
+      </div>
+      <div div class="level-hidden" id="level-2">
+        <h1>Lesson Two</h1>
+      </div>
+      <div>
         <div id="results-container"></div>
+        <br/>
         <div id="level-button-container">
           <span class="button level-button" id="previous-level-button">&#129136; Previous</span>
           <span class="button level-button" id="next-level-button">Next &#129138;</span>
         </div>
+      </div>
     </div>
     <div id="response-box">
       <textarea id="cm-editor" autofocus></textarea>

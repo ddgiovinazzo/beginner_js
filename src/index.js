@@ -3,6 +3,7 @@ import evaluate from "./scripts/evaluate"
 import resetLevel from "./scripts/levels/resetLevel"
 import currentLevel from "./scripts/levels/current_level"
 import checkAnswer from "./scripts/checkAnswer"
+import removeResults from "./scripts/removeResults"
 
 let currentLevelNumber = 0
 resetLevel(currentLevelNumber)
@@ -26,9 +27,11 @@ nextLevelButton.addEventListener('click', () => {
     currentLevelNumber++
     currentLevel(currentLevelNumber, nextLevelButton, previousLevelButton)
     resetLevel(currentLevelNumber)
+    removeResults()
 })
 previousLevelButton.addEventListener('click', () => {
     currentLevelNumber--
     currentLevel(currentLevelNumber, nextLevelButton, previousLevelButton)
     resetLevel(currentLevelNumber)
+    removeResults()
 })

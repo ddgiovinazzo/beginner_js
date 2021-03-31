@@ -6,6 +6,10 @@ const levels = {
         defaultValue: 'console.log("")',
         answer: `~ "Hello World!"`
     },
+    2: {
+        defaultValue: 'console.log()',
+        answer: `~ 17`
+    },
 }
 
 export default levels
