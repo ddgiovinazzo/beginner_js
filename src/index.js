@@ -1,11 +1,11 @@
 import "./styles/index.scss"
 import evaluate from "./scripts/evaluate"
-import reset from "./scripts/reset"
-import currentLevel from "./scripts/current_level"
-
-reset()
+import resetLevel from "./scripts/levels/resetLevel"
+import currentLevel from "./scripts/levels/current_level"
 
 let currentLevelNumber = 0
+resetLevel(currentLevelNumber)
+
 const nextLevelButton = document.getElementById('next-level-button')
 const previousLevelButton = document.getElementById('previous-level-button')
 
@@ -17,7 +17,7 @@ document.addEventListener('keydown', (event)=>{
     if(event.key ==="Delete" && event.ctrlKey) return reset()
 })
 runButton.addEventListener('click', evaluate)
-resetButton.addEventListener('click', () => reset())
+resetButton.addEventListener('click', () => resetLevel(currentLevelNumber))
 nextLevelButton.addEventListener('click', () => {
     currentLevelNumber++
     currentLevel(currentLevelNumber, nextLevelButton, previousLevelButton)
