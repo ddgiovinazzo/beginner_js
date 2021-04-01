@@ -12,6 +12,7 @@ export const cmEditor = CodeMirror.fromTextArea(editor, {
   lineNumbers: true,
   autofocus: true,
   gutter: true,
+  lineWrapping: true
 })
 export const cmConsole = CodeMirror.fromTextArea(console, {
   mode: 'javascript',

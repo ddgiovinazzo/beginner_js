@@ -9,7 +9,7 @@ const levels = {
         defaultValue: 'console.log(3 + 5 + 7)\nconsole.log(7.5 * 2)',
     },
     3: {
-        defaultValue: 'let name = "Daniel"\nlet number = 8\nconsole.log("Hey, my name is " + name + ".")\nconsole.log(52 + number)',
+        defaultValue: 'let myName = "Daniel"\nlet sentence= "Hey, my name is " + myName + "."\nconsole.log(sentence)',
     },
 }
 
