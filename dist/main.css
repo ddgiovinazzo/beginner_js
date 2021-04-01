@@ -57,7 +57,7 @@ strong{
 
 em{
   font-style: italic;
-  color: #9876AA
+  color: #835E97
 }
 
 body {
@@ -112,6 +112,7 @@ main{
     font-size: 22px;
     width: 100%;
     height: 300px;
+    line-height: 30px;
   }
 
 .CodeMirror.cm-s-darcula-console,
@@ -290,8 +291,8 @@ ul li {
 
 #level-container{
     display: flex;
-    height: 90%;
-    width: 35%;
+    height: 520px;
+    width: 500px;
     font-family: "Robato", sans-serif;
     font-size: 22px;
     line-height: 30px;
@@ -303,6 +304,11 @@ ul li {
     font-family: "Lato", sans-serif;
     font-size: 30px;
     color: #CC7832;
+}
+
+.level{
+    height: 500px;
+    overflow-y: scroll;
 }
 
 

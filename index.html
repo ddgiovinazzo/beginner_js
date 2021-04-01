@@ -27,7 +27,7 @@
 
   <main>
     <div id="level-container">
-      <div id="level-0">
+      <div class="level" id="level-0">
         <h1>Hey There!</h1>
         <br />
         <p>
@@ -47,7 +47,7 @@
         </p>
       </div>
 
-      <div div class="level-hidden" id="level-1">
+      <div div class="level level-hidden" id="level-1">
         <h1>Lesson One: Strings</h1>
         <br />
         <p>
@@ -60,12 +60,62 @@
         </p>
         <br />
         <p>
-          Print the string <em>"Hello World!" </em>in the console.
+          Print the string <em>"Hello World!" </em>(or any string you'd prefer) in the console.
         </p>
         <br />
       </div>
-      <div div class="level-hidden" id="level-2">
-        <h1>Lesson Two</h1>
+      <div div class="level level-hidden" id="level-2">
+        <h1>Lesson Two: Numbers</h1>
+        <br />
+        <p>
+          Numbers can be manipulated using operators. 
+        </p>
+        <br/>
+        <p>
+          Some you may already know are:
+        </p>
+        <ul>
+          <li> addition <em>+</em></li>
+          <li> subtraction <em>-</em></li>
+          <li> multiplication <em>*</em></li>
+          <li> division <em>/</em></li>
+        </ul>
+        <br />
+        <p>
+          <strong>Note:</strong> The order of operations is implimented when multiple operators are used.
+        </p>
+        <br/>
+        <p>
+          Print the number <em>15</em> in the console.
+          Use different combinations of numbers and operators.
+        </p>
+        <br />
+      </div>
+      <div div class="level level-hidden" id="level-3">
+        <h1>Lesson Three: Variables</h1>
+        <br />
+        <p>
+          A variable is a container used to store a value.
+          They are mainly used to simplify code by acting as placeholders.
+        </p>
+        <br/>
+        <p>
+          A variable is declared with the <em>let</em> keyword and assigned with the <em>=</em> operator.
+        </p>
+        <br/>
+        <p>
+          Their usefulness will be shown more in the following lessons.
+        </p>
+        <br />
+        <p>
+          <strong>Note:</strong> You can name a varible anything you choose (as long as it isn't already a javascript keyword).
+        </p>
+        <br/>
+        <p>
+          Run the example code given to get an idea of how variables work.
+          Then, change up the variable names and values and print the results to the console.
+        </p>
+        <br />
       </div>
       <div>
         <div id="results-container"></div>
@@ -75,6 +125,7 @@
           <span class="button level-button" id="next-level-button">Next &#129138;</span>
         </div>
       </div>
+      <br/>
     </div>
     <div id="response-box">
       <textarea id="cm-editor" autofocus></textarea>

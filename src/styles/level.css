@@ -4,8 +4,8 @@
 
 #level-container{
     display: flex;
-    height: 90%;
-    width: 35%;
+    height: 520px;
+    width: 500px;
     font-family: "Robato", sans-serif;
     font-size: 22px;
     line-height: 30px;
@@ -17,4 +17,9 @@
     font-family: "Lato", sans-serif;
     font-size: 30px;
     color: #CC7832;
+}
+
+.level{
+    height: 500px;
+    overflow-y: scroll;
 }
