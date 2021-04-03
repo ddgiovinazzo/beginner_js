@@ -6,10 +6,13 @@ const levels = {
         defaultValue: 'console.log("")',
     },
     2: {
-        defaultValue: 'console.log(3 + 5 + 7)\nconsole.log(7.5 * 2)',
+        defaultValue: 'console.log(3 + 5 + 7)\n\nconsole.log(7.5 * 2)',
     },
     3: {
-        defaultValue: 'let myName = "Daniel"\nlet sentence= "Hey, my name is " + myName + "."\nconsole.log(sentence)',
+        defaultValue: 'let myName = "Daniel"\nlet sentence= "Hey, my name is " + myName + "."\n\nconsole.log(sentence)',
+    },
+    4: {
+        defaultValue: 'let number = 1\n\nconsole.log(["Olivia", number, 5])',
     },
 }
 
