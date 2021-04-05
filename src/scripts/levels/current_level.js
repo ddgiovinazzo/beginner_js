@@ -7,9 +7,12 @@ const currentLevel = (currentLevelNumber, nextLevelButton, previousLevelButton) 
     if(nextLevel) nextLevel.classList.add("level-hidden")
     currentLevel.classList.remove("level-hidden")
 
-    const style = previousLevelButton.style
-    if(!style.display) style.display ="inherit"
-    if(!currentLevelNumber) if(style.display) style.display = ""
+    const previousStyle = previousLevelButton.style
+    const nextStyle = nextLevelButton.style
+    if(previousLevel && !previousStyle.display) previousStyle.display ="inherit"
+    if(nextLevel && nextStyle.display === "none") nextStyle.display ="inherit"
+    if(!previousLevel) previousStyle.display = ""
+    if(!nextLevel) nextStyle.display = "none"
 }
 
 export default currentLevel

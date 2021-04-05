@@ -16,6 +16,9 @@ const levels = {
     },
     5: {
         defaultValue: 'function add(number1, number2){\n  return number1 + number2\n}\n\nconsole.log(add(1,2))',
+    },
+    6: {
+        defaultValue: 'console.log("Great Job Developers!")',
     }
 }
 646-801-5108
